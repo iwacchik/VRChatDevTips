@@ -1,0 +1,2 @@
+# VRChatDevTips
+VRChatのTIPSや技術メモをまとめたリポジトリです
