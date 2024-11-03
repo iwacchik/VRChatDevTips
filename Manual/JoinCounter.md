@@ -84,7 +84,7 @@ ViewerUdonを設定することで、ViewerObjectプレハブをPickupしたプ�
 ---
 
 ### JoinTriggerByArea 
-JoinTriggerByAreaプレハブにアタッチされています。設定項目はありません。BoxColliderなどのColliderと併用し、Colliderは`IsTrigger`にチェックを入れてください。
+JoinTriggerByAreaプレハブにアタッチされています。設定項目はありません。BoxColliderなどのColliderと併用し、Colliderは`IsTrigger`にチェックを入れてください。  
 ![スクリーンショット 2024-11-03 144008](https://github.com/user-attachments/assets/738b2465-3810-49c2-bbb0-67464c588f2b)  
 
 ---
