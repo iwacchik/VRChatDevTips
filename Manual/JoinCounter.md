@@ -40,7 +40,7 @@ JoinCounterプレハブにアタッチされています。ジョインカウン
 | **Count Type**                    | ジョイン回数をどの期間でカウントするかを指定します。「Daily」「Weekly」「Monthly」「Yearly」から選択します。「Always」は機能テスト用で毎回カウントされるようになります|
 | **Boundary Time**                 | 期間の境界となる時間を設定します。 |
 | **Start Day Of Week**             | Count Typeが「Weekly」の場合、週の開始曜日を指定します。|
-| **Reset Type**                    | リセット方法を指定します。期間条件を満たすとジョインカウントが0になります。「None」「Daily」「Weekly」「Monthly」「Yearly」から選択します。|
+| **Reset Type**                    | カウントリセット期間を指定します。期間条件を満たすとジョインカウントが0になります。「None」「Daily」「Weekly」「Monthly」「Yearly」から選択します。|
 
 #### 他のギミック連携設定
 `OnJoinEvent`を設定することで、ジョインカウントが行われたタイミングに他のギミックを実行することができます
