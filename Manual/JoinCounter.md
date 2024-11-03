@@ -48,15 +48,15 @@ JoinCounterプレハブにアタッチされています。ジョインカウン
 |-----------------------------------|----------------------------------------------------------------------------------------------------------|
 | **On Join Event Listeners**        | 連携するギミックのUdonを設定します。複数設定することができます。 |
 | **Join Event Name**                | ジョインカウントが行われたときに実行されるイベント名をいれます。On Join Event Listenersで設定したUdon内にここで設定する名前のイベントが実装されている必要があります。 |
-| **Join Event Count Variable Name** | (オプション)ジョインカウントを利用したい場合はOn Join Event Listenersで設定したUdon内にpublic intで変数を作成し、その名前を設定します。 |
+| **Join Event Count Variable Name** | (オプション)ジョインカウントを利用したい場合はOn Join Event Listenersで設定したUdon内に`public int`で変数を作成し、その名前を設定します。 |
 
 `OnDataUpdate`を設定することで、ジョインカウントの数値が変更されたタイミングに他のギミックを実行することができます
 | 設定項目                           | 説明                                                                                                       |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------|
 | **On Data Update Event Listeners**   | 連携するギミックのUdonを設定します。複数設定することができます。 |
 | **Update Event Name**                | ジョインカウントの数値が変更されたときに実行されるイベント名をいれます。On Data Update Event Listenersで設定したUdon内にここで設定する名前のイベントが実装されている必要があります。 |
-| **Update Event Count Variable Name** | (オプション)ジョインカウントを利用したい場合はOn Data Update Event Listenersで設定したUdon内にpublic intで変数を作成し、その名前を設定します。|
-| **Update Event Last Join Time Variable Name** | (オプション)最終ジョイン時刻を利用したい場合はOn Data Update Event Listenersで設定したUdon内にpublic DateTimeで変数を作成し、その名前を設定します。|
+| **Update Event Count Variable Name** | (オプション)ジョインカウントを利用したい場合はOn Data Update Event Listenersで設定したUdon内に`public int`で変数を作成し、その名前を設定します。|
+| **Update Event Last Join Time Variable Name** | (オプション)最終ジョイン時刻を利用したい場合はOn Data Update Event Listenersで設定したUdon内に`public DateTime`で変数を作成し、その名前を設定します。|
 
 #### デバッグ機能
 エディタ限定で機能します。
@@ -77,9 +77,9 @@ ViewerUdonを設定することで、ViewerObjectプレハブをPickupしたプ�
 | **Viewer Udon**   | 連携するギミックのUdonを設定します。複数設定することができます。 |
 | **View Start Event Name**                | オブジェクトをPickupしたときに実行されるイベント名をいれます。Viewer Udonで設定したUdon内にここで設定する名前のイベントが実装されている必要があります。 |
 | **View End Event Name** | (オプション)オブジェクトをDropしたときに実行されるイベント名をいれます。Viewer Udonで設定したUdon内にここで設定する名前のイベントが実装されている必要があります。|
-| **Player Name Variable Name** | (オプション)Pickupしたプレイヤーの名前を使用したい場合はViewer Udonで設定したUdon内にpublic stringで変数を作成し、その名前を設定します。|
-| **Join Count Variable Name** | (オプション)Pickupしたプレイヤーのジョイン回数を使用したい場合はViewer Udonで設定したUdon内にpublic intで変数を作成し、その名前を設定します。|
-| **Last Join Time Variable Name** | (オプション)Pickupしたプレイヤーの最終ジョイン時刻を使用したい場合はViewer Udonで設定したUdon内にpublic DateTimeで変数を作成し、その名前を設定します。|
+| **Player Name Variable Name** | (オプション)Pickupしたプレイヤーの名前を使用したい場合はViewer Udonで設定したUdon内に`public string`で変数を作成し、その名前を設定します。|
+| **Join Count Variable Name** | (オプション)Pickupしたプレイヤーのジョイン回数を使用したい場合はViewer Udonで設定したUdon内に`public int`で変数を作成し、その名前を設定します。|
+| **Last Join Time Variable Name** | (オプション)Pickupしたプレイヤーの最終ジョイン時刻を使用したい場合はViewer Udonで設定したUdon内に`public DateTime`で変数を作成し、その名前を設定します。|
 
 ---
 
