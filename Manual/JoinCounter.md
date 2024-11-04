@@ -70,6 +70,9 @@ JoinCounterプレハブにアタッチされています。ジョインカウン
 ViewerObjectプレハブにアタッチされています。他のギミックとの連携設定が行えます。
 ![スクリーンショット 2024-11-03 161740](https://github.com/user-attachments/assets/ff56d911-b1c3-4f07-81aa-0fdea7b269c7)
 
+#### 基本設定
+なし
+
 #### 他のギミック連携設定
 ViewerUdonを設定することで、ViewerObjectプレハブをPickupしたプレイヤーのジョインカウントなどを他のギミックへ渡すことができます。JoinCountViewerには表示機能は入ってないためViewerUdonに設定したギミック内に表示機能を実装する必要があります。
 | 設定項目                           | 説明                                                                                                       |
