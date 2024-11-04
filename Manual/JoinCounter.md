@@ -98,7 +98,7 @@ JoinTriggerByJoinプレハブにアタッチされています。設定項目は
 ### JoinTriggerByMethod
 JoinTriggerByMethodプレハブにアタッチされています。設定項目はありません。
 Joinイベントが実装されているため、`SendCustomEvent("Join");`などを使用して動作させます。
-`SendCustomNetworkEvent`を使用する場合は、インスペクターの`Synchronization Method`をManualまたはContinuousに設定して、同期が可能な状態にしてください。
+`SendCustomNetworkEvent`を使用する場合は、`Synchronization Method`をManualまたはContinuousに設定して、同期可能な状態にしてください。
 
 ![スクリーンショット 2024-11-03 144031](https://github.com/user-attachments/assets/168f0f44-fe5f-4ecb-8837-f65f2b5edb1d)  
 
