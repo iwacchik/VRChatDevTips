@@ -1,8 +1,11 @@
 # JoinCounter
 JoinCounterは、プレイヤーがジョインした回数をPersistenceを利用して永続保存できるシステムです。カウントの間隔はDaily、Weekly、Monthly、Yearlyから指定可能で、カウントはジョイン直後や特定エリアへの進入時など、さまざまなタイミングで行うことができます。また、回数カウントをリセットする機能も備えています。
 
+> [!NOTE]  
+> 24/11/06現在 VRChatSDKは`3.7.2-persistence-beta.1` VRChatクライアントはオープンベータ`persistence-beta`でのみ機能します
+
 ## インストール方法
-1. [https://iwacchik.github.io/IwacchiLabVCCListing/](https://iwacchik.github.io/IwacchiLabVCCListing/) にアクセスします。ページ内にある「Add to VCC」をクリックし、**VCC (VRChat Creator Companion)** で「Add Repository」を選択します。 導入したいプロジェクトの「Manage Project」を開き、 **IwacchiLab - World Core** を追加します。
+1. [https://iwacchik.github.io/IwacchiLabVCCListing/](https://iwacchik.github.io/IwacchiLabVCCListing/) にアクセスします。ページ内にある「Add to VCC」をクリックし、**VCC (VRChat Creator Companion)** で「Add Repository」を選択します。 導入したいプロジェクトの「Manage Project」を開き、 **IwacchiLab - World Core (0.0.3-persistence-beta)** を追加します。
 
 2. **JoinCounter-v2.unitypackage** をインポートしてください。
    
