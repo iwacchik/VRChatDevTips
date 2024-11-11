@@ -77,15 +77,48 @@ object != null の場合に true を返します
 ## ベンチマークによる比較
 
 ### 検証用コード
+```csharp
+public void NullCheck_Benchmark()
+{
+    var test = 0;
+    _stopwatch.Restart();
+    for (int i = 0; i < _iterations; i++)
+    {
+        if (_testObjects[i] != null)
+        {
+            test++;
+        }
+    }
+    _stopwatch.Stop();
+}
+
+public void IsValid_Benchmark()
+{
+    var test = 0;
+    _stopwatch.Restart();
+    for (int i = 0; i < _iterations; i++)
+    {
+        if (Utilities.IsValid(_testObjects[i]))
+        {
+            test++;
+        }
+    }
+    _stopwatch.Stop();
+}
+```
 
 ### ベンチマーク結果
 
-| チェック方法             | 単純 `null` チェック (ms) | 入れ子 `null` チェック (ms) |
-|-------------------------|---------------------------|-----------------------------|
-| `== null`               | 50                        | 100                         |
-| `Utilities.IsValid`     | 30                        | 60                          |
+| チェック方法             | 試行回数                   | 平均時間 (ms)               | 処理速度差 (%) |
+|-------------------------|---------------------------|-----------------------------|---------------|
+| `!= null`               | 100                       | 0.103                       |100%           |
+| `Utilities.IsValid`     | 100                       | 0.085                       |121.2%         |
+| `!= null`               | 1000                      | 0.831                       |100%           |
+| `Utilities.IsValid`     | 1000                      | 0.699                       |118.9%         |
+| `!= null`               | 10000                     | 8.144                       |100%           |
+| `Utilities.IsValid`     | 10000                     | 6.858                       |118.8%         |
 
-この結果から、`Utilities.IsValid` が効果的であることが分かります。
+この結果から、`Utilities.IsValid` を使用することで約20%程度パフォーマンスが向上します。
 
 #### Assembly Codeからの考察
 出力されるAssembly Codeを比較します。違いはnullチェック処理のみですが、`Utilities.IsValid`はシンプルなコードになっています。
