@@ -10,7 +10,7 @@ Unityでのnullチェックは通常、`== null` や `!= null` を使います�
 ## 目次
 
 1. [UdonSharpにおけるnullチェックの基本](#udonsharpにおけるnullチェックの基本)
-2. [Utilities.IsValidとは](#Utilities.IsValidとは)
+2. [Utilities.IsValidとは](#utilitiesisvalidとは)
 3. [ベンチマークによる比較](#ベンチマークによる比較)
 4. [nullチェック結果を保持してパフォーマンス向上](#nullチェック結果を保持してパフォーマンス向上)
 5. [まとめ](#まとめ)
