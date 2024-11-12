@@ -72,6 +72,46 @@ public class Sample : UdonSharpBehaviour
 ![スクリーンショット 2024-11-11 150424](https://github.com/user-attachments/assets/989cafa9-2916-44e5-9135-c8147ff4e385)
 object != null の場合に `true` を返します
 
+Utilities.IsValidに置き換えたサンプルコード
+```csharp
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+
+public class Sample : UdonSharpBehaviour
+{
+    private VRCPlayerApi _player;
+    
+    private void Update()
+    {
+        if (Utilities.IsValid(_player))
+        {
+            // プレイヤーが設定されている場合の処理
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //プレイヤーと衝突した場合、otherはnullとなる
+        if (!Utilities.IsValid(other))
+        {
+            return;
+        }
+        
+        var foo = other.GetComponent<Foo>();
+        if (!Utilities.IsValid(foo))
+        {
+            return;
+        }
+
+        // 処理
+        foo.Bar();
+    }
+}
+
+```
+
 ---
 
 ## ベンチマークによる比較
