@@ -10,7 +10,7 @@ VRChat Creator Companion (VCC) でクラッシュが発生した場合の解決�
 
 #### **VCCに登録されたプロジェクトの確認方法**
 1. 以下のパスにある設定ファイルを開きます：
-`C:\Users%username%\AppData\Local\VRChatCreatorCompanion\settings.json`
+`C:\Users\%username%\AppData\Local\VRChatCreatorCompanion\settings.json`
 
 ※インストール方法によってパスが異なる場合があります。この例は「推奨設定」でインストールした場合のパスです。
 
