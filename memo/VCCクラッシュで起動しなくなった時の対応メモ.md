@@ -1,4 +1,4 @@
-# VCCのクラッシュを解決する方法
+# VCCがクラッシュしたときの解決方法
 
 VRChat Creator Companion (VCC) でクラッシュが発生した場合の解決方法を紹介します。
 
